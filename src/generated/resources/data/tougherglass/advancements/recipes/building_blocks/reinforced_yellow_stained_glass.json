@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "tougherglass:reinforced_yellow_stained_glass"
+    ]
+  },
+  "criteria": {
+    "has_Block{minecraft:yellow_stained_glass}": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:yellow_stained_glass"
+            ]
+          }
+        ]
+      }
+    },
+    "has_Block{minecraft:obsidian}": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:obsidian"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "tougherglass:reinforced_yellow_stained_glass"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_Block{minecraft:yellow_stained_glass}",
+      "has_Block{minecraft:obsidian}",
+      "has_the_recipe"
+    ]
+  ]
+}

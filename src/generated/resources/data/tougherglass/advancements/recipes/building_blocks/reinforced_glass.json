@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "tougherglass:reinforced_glass"
+    ]
+  },
+  "criteria": {
+    "has_Block{minecraft:glass}": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:glass"
+            ]
+          }
+        ]
+      }
+    },
+    "has_Block{minecraft:obsidian}": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:obsidian"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "tougherglass:reinforced_glass"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_Block{minecraft:glass}",
+      "has_Block{minecraft:obsidian}",
+      "has_the_recipe"
+    ]
+  ]
+}

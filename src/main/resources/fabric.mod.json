@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "tougherglass",
+  "version": "${version}",
+
+  "name": "Tougher Glass",
+  "description": "This is an mod that add's blast resistance glass.",
+  "authors": [
+    "Team Frost"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/tougher-glass-fabric",
+    "sources": "https://github.com/teamfrostmods/Tougher-Glass-Fabric",
+    "issues": "https://github.com/teamfrostmods/Tougher-Glass-Fabric/issues"
+  },
+
+  "license": "gpl-3.0",
+  "icon": "assets/tougherglass/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.teamfrost.tougherglass.core.TougherGlass"
+    ],
+    "client": [
+      "com.github.teamfrost.tougherglass.client.TougherGlassClient"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "cloth-api": "*"
+  }
+}
